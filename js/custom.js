@@ -9,12 +9,6 @@
 
  (function($) {
 
-	// Conditional logic for the sidebar to be on the side if current_issue exists
-
-    if($(".current_issue").length){
-        $(".sidebar_wrapper").insertAfter($(".sections"));
-    }
-
     //Conditional logic if there is not an issue but there is the additional content
 
     if($(".current_issue").length == 0  && $('.additional_content').length ) {

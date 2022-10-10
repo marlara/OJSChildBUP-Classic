@@ -89,18 +89,25 @@
                        {/if}
                    </header>
                    {include file="frontend/objects/issue_toc.tpl"}
+                   
                    {if $hasSidebar}
                     <div class="sidebar_wrapper" role="complementary">
                         {call_hook name="Templates::Common::Sidebar"}
                     </div>
+                    <div class="clearfix"></div>
                     {/if}
+                    <a class="read_more btn btn-secondary" href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
+                        {translate key="journal.viewAllIssues"}
+                    </a>
                </section>
+               
             {else}
                 {if $hasSidebar}
                    <div class="sidebar_wrapper" role="complementary">
                        {call_hook name="Templates::Common::Sidebar"}
                    </div>
                 {/if}
+
             {/if}
    
    
