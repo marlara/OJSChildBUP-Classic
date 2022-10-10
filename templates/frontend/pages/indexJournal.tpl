@@ -63,6 +63,7 @@
            {call_hook name="Templates::Index::journal"}
    
            {* Latest issue *}
+           
            {if $issue}
                <section class="current_issue">
                    <header>
@@ -95,16 +96,17 @@
                     {/if}
                </section>
             {else}
-            {if $hasSidebar}
-                <div class="sidebar_wrapper" role="complementary">
-                    {call_hook name="Templates::Common::Sidebar"}
-                </div>
+                {if $hasSidebar}
+                   <div class="sidebar_wrapper" role="complementary">
+                       {call_hook name="Templates::Common::Sidebar"}
+                   </div>
+                {/if}
             {/if}
-           {/if}
+   
    
            {* Additional Homepage Content *}
            {if $additionalHomeContent}
-               <section class="additional_content">
+                <section class="additional_content">
                    {$additionalHomeContent}
                </section>
            {/if}

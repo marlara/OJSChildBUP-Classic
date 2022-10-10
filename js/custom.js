@@ -9,13 +9,17 @@
 
  (function($) {
 
-	// Conditional logic for the sidebar wheter issue not exists and the additional content exists
+	// Conditional logic for the sidebar to be on the side if current_issue exists
 
-    if($(".current_issue").length < 0  && $('.additional_content').length ) //Try to check the length of the selector, if it returns you something then the element must exists else not.
-    {
-        $( ".additional-content" ).append( $( ".sidebar_wrapper" ) );
-    } else if($(".current_issue").length){
+    if($(".current_issue").length){
         $(".sidebar_wrapper").insertAfter($(".sections"));
+    }
+
+    //Conditional logic if there is not an issue but there is the additional content
+
+    if($(".current_issue").length == 0  && $('.additional_content').length ) {
+        $(".sidebar_wrapper").insertAfter($('.additional_content'));
+        $(".additional_content").css({"width": "70%", "float": "left"}); 
     }
 
 })(jQuery);
