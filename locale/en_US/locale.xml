@@ -1,0 +1,17 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/themes/ChildBUP-Classic/locale/en_US/locale.xml
+  *
+  * Copyright (c) Lara Marziali
+  * Distributed under the GNU GPL v3. For full terms see the file LICENSE.
+  *
+  * Localization strings
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.themes.ChildBUP-HealthScience.name">Classic Child BUP</message>
+	<message key="plugins.themes.ChildBUP-HealthScience.description">A child theme for BUP journals, based on the Classic Theme.</message>
+</locale>
