@@ -27,8 +27,8 @@ class ChildBUPClassic extends ThemePlugin {
 	 */
 	public function init() {
 		$this->setParent('classicthemeplugin');
-		$this->modifyStyle('stylesheet', array('addLess' => array('styles/custom.less')));
-		#$this->addScript('custom', 'js/custom.js');
+		$this->addStyle('custom-stylesheet', 'styles/custom.less');
+		$this->addScript('custom', 'js/custom.js');
 	}
 
 	/**
