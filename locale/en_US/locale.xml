@@ -12,6 +12,6 @@
   -->
 
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.ChildBUP-HealthScience.name">Classic Child BUP</message>
-	<message key="plugins.themes.ChildBUP-HealthScience.description">A child theme for BUP journals, based on the Classic Theme.</message>
+	<message key="plugins.themes.childbup-classic.name">Classic Child BUP</message>
+	<message key="plugins.themes.childbup-classic.description">A child theme for BUP journals, based on the Classic Theme.</message>
 </locale>

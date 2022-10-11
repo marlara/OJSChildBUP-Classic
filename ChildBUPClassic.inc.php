@@ -29,6 +29,7 @@ class ChildBUPClassic extends ThemePlugin {
 		$this->setParent('classicthemeplugin');
 		$this->addStyle('custom-stylesheet', 'less/custom.less');
 		$this->addScript('custom', 'js/custom.js');
+		
 	}
 
 	/**
@@ -36,7 +37,7 @@ class ChildBUPClassic extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __("plugins.themes.ChildBUP-Classic.name");
+		return __("plugins.themes.childbup-classic.name");
 	}
 
 	/**
@@ -44,7 +45,7 @@ class ChildBUPClassic extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __("plugins.themes.ChildBUP-Classic.description");
+		return __("plugins.themes.childbup-classic.description");
 	}
 }
 

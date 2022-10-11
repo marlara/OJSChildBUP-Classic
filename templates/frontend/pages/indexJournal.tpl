@@ -1,6 +1,7 @@
 {**
     * templates/frontend/pages/indexJournal.tpl
-    *
+    * Copyright (c) Lara Marziali
+    * Distributed under the GNU GPL v3. For full terms see the file LICENSE.
     *
     * @brief Display the index page for a journal
     *
@@ -91,6 +92,9 @@
                    {include file="frontend/objects/issue_toc.tpl"}
                    
                    {if $hasSidebar}
+                    <a class="read_smart_device btn btn-secondary" href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="current"}">
+                        {translate key="journal.viewAllIssues"}
+                    </a>
                     <div class="sidebar_wrapper" role="complementary">
                         {call_hook name="Templates::Common::Sidebar"}
                     </div>

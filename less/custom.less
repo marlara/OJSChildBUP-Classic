@@ -1,3 +1,14 @@
+/**
+ * @file /less/custom.less
+ *
+ * Copyright (c) Lara Marziali
+ * Distributed under the GNU GPL v3. For full terms see the file LICENSE.
+ *
+ * @brief Custom less and css to this theme.
+ */
+
+
+
 .pkp_block{
     width: 100%;
 }
@@ -22,5 +33,51 @@
 
 
 .clearfix{
-    clear:both
+    clear:both;
+}
+
+
+.current_issue > .galleys{
+    text-align: right;
+}
+
+.description_cover {
+    background-color: lightblue; /*secondary colour not working!!! also lighten*/
+    padding: 2em;
+}
+  
+.flex_container.description_cover + .galleys > .galleys_links {
+background-color: cadetblue;
+margin-top: 0px;
+padding: 1em;
+}
+
+
+/*Button for small devices disabled */
+.read_smart_device{ 
+    display: none;
+}
+
+@media (max-width:992px) {
+    .current_issue > .galleys{
+        text-align: left;
+    }
+
+    .sidebar_wrapper{
+        flex-direction: row;
+        float: none;
+    }
+
+    .current_issue > .sections {
+        float: none;
+        display: none;
+    }
+    
+    .read_smart_device{
+        display: inline-block;
+    }
+
+    .read_more{
+        display: none;
+    }
 }
