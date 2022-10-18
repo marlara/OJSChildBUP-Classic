@@ -42,12 +42,12 @@
 }
 
 .description_cover {
-    background-color: lightblue; /*secondary colour not working!!! also lighten*/
+    background-color: lighten(@secondary-colour, 60%);
     padding: 2em;
 }
   
 .flex_container.description_cover + .galleys > .galleys_links {
-background-color: cadetblue;
+background-color: @secondary-colour;
 margin-top: 0px;
 padding: 1em;
 }
