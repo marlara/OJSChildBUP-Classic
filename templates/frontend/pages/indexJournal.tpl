@@ -23,7 +23,7 @@
        {* Display homepage image if set, and wrap around journal summary if use chooses to display it *}
        {if $homepageImage} {*this has errors, so I corrected it with a new class "linear-gradient*}
            <div
-               class="homepage_image{if $showJournalSummary} linear-gradient"{/if}
+               class="homepage_image{if $showJournalSummary} linear-gradient{/if}"
                style="background-image:url('{$publicFilesDir}/{$homepageImage.uploadName}')"
                >
                
