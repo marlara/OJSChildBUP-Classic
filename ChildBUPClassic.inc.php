@@ -38,7 +38,7 @@ class ChildBUPClassic extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __("plugins.themes.childbup-classic.name");
+		return __("plugins.themes.ChildBUP-Classic.name");
 	}
 
 	/**
@@ -46,7 +46,7 @@ class ChildBUPClassic extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __("plugins.themes.childbup-classic.description");
+		return __("plugins.themes.ChildBUP-Classic.description");
 	}
 }
 
